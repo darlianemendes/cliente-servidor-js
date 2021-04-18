@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <title>Eventos window.onload e $(document).ready()</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+</head>
+
+<body>
+    <div id="texto">
+        <p> Texto aleatório parte 1.</p>
+        <p> Texto aleatório parte 2.</p>
+        <p> Texto aleatório parte 3.</p>
+
+        <img src="https://picsum.photos/id/0/367/267" />
+        <br/>
+        <img src="https://picsum.photos/id/1/367/267" />
+        <br/>
+        <img src="https://picsum.photos/id/10/367/267" />
+        <br/>
+        <img src="https://picsum.photos/id/100/367/267" />
+        <br/>
+        <img src="https://picsum.photos/id/1000/367/267" />
+    </div>
+    <script type="text/javascript">
+        window.onload = function () {
+            alert('Evento window.load disparado');
+        }
+
+        $(function () {
+            //$('div p').before('<h1>Lorem Ipsum</h1>')
+            alert('Evento document.ready disparado');
+        });
+    </script>
+</body>
+
+</html>
